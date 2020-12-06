@@ -1,0 +1,200 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+#bo th, td {
+  text-align: center;
+  padding: 20 px;
+  padding-right:20px;
+  border:1px solid black;
+}
+
+#bo tr:nth-child(even) {background-color: #f2f2f2;}
+
+#bo th {
+  padding-top: 12px;
+  padding-left:12px;
+  padding-bottom: 12px;
+  padding: 20px;
+  text-align: center;
+  background-color: #681f7a;
+  color: white;
+}
+#bo td
+{
+  padding: 20px;
+}
+
+.btn 
+{
+    background-color: #0099ff;
+    color: white ;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 15px;
+    height:50px;
+    width:400px;
+}
+
+img.im{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+</style>    
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <br>
+        <div id="logo">
+            <a href="institute_dashboard.html"><img src="logo.jpg" aign="right" height=200 width=300 ></a>
+            </div>
+            
+        <div id="moving">
+            <div id="text">
+            
+            <marquee><p>Welcome to Maharashtra Government's - Department of Institutional Bodies and Collectors</p></marquee>
+            </div>
+            
+            <img src="satyamev.png" align="left" height=150 width=100>
+            <img src="maharashtra.png" height=150 width=200>
+            
+            <br>
+
+        </div>
+        <br>
+        <br>
+        <div id="navbar">
+            <ul>
+            <h2>  Departments </h2>
+            <li><a href="" >Logout</a></li>
+            <li><a href="women.html" >Women and Child Welfare</a></li>
+            <li><a href="itservices.html" >IT Services and Employment</a></li>
+            <li><a href="health.html" >Health Services</a></li>
+            <li><a href="agriculture.html" >Agriculture</a></li>
+            
+        </div>
+        <br>
+        <p>Please Select your District : </p>
+        <div id="contents">
+
+        <ul>
+            <li><a href="pune.html"> PUNE DISTRICT           </a></li>
+            <li><a href="thane.html"> THANE DISTRICT        </a></li>
+            <li><a href="nashik.html"> NASHIK DISTRICT         </a></li>
+            <li><a href="vasai.html"> VASAI - VIRAR DISTRICT        </a></li>
+            <li><a href="greievance.html"> GRIEVANCES/SUGGESTIONS</a></li>
+            
+            
+        </ul>
+        </div>
+        <div id="form">
+             <h1>About the District </h1>
+        <p><font size=3 ><b>Thane is one of the few industrially advanced districts in the state of Maharashtra. Thane district is on the North of Konkan division. According to census 2011, it is third in the state in terms of population. Area of ​​the district is 4214 sq. Km. It is 1.37 percent of the state. The Sahyadri mountain ranges to the east and the Arabian sea to the west, the dense forest section of the Gujarat state on the north, and the south of Mumbai, which are considered to be world famous and the financial capital of India, are the four pillars of this district. The industrial area developed in Thane, Kalyan, Ulhasnagar, Ambernath, Bhiwandi talukas of the district and are under influence of Mumbai city’s modern culture. Out of 720 KM of coastal coast of Maharashtra State, Thane district has benfitted by 27 KM of coastal coast. 7642 hectare area is suitable for ground water fishing. Along with marine fishing, groundwater fishing is done as well. A big market like Mumbai is available for fishery and there is a great demand for fish production from the Gulf countries also.</b></font></p>
+       
+        <h1>Select your Department -  </h1>
+        <a href="#demo" class="btn" data-toggle="collapse">Agriculture </a>
+        <br><br>
+  <div id="demo" class="collapse">
+    <table cellpadding="20" id="bo">
+        <tr>
+        <th>Department Name</th>
+        <th>Problem/Project</th>
+        <th>District Name</th>
+        <th>Upload your Report</th>
+        <th>Last Date to Submit</th>
+        </tr>
+        <tr>
+            <td>Agriculture</td>
+            <td>Sample Problem Statement</td>
+            <td>Thane</td>
+            <td><form method="POST" action=""><input type="file" name="" 
+                id=""><input type="Submit"></form></td>
+            <td>dd/mm/yyyy</td>
+        </tr>
+    </table>
+  </div>
+<br>
+<a href="#demo1" class="btn" data-toggle="collapse">Health Services </a>
+        <br><br>
+  <div id="demo1" class="collapse">
+    <table cellpadding="20" id="bo">
+        <tr>
+        <th>Department Name</th>
+        <th>Problem/Project</th>
+        <th>District Name</th>
+        <th>Upload your Report</th>
+        <th>Last Date to Submit</th>
+        
+        </tr>
+        <tr>
+            <td>Health Services</td>
+            <td>Sample Problem Statement</td>
+            <td>Thane</td>
+            <td><form method="POST" action=""><input type="file" name="" 
+                id=""><input type="Submit"></form></td>
+            <td>dd/mm/yyyy</td>
+        </tr>
+    </table>
+  </div>
+<br>
+<a href="#demo2" class="btn" data-toggle="collapse">IT Services and Employment </a>
+        <br><br>
+  <div id="demo2" class="collapse">
+    <table cellpadding="20" id="bo">
+        <tr>
+        <th>Department Name</th>
+        <th>Problem/Project</th>
+        <th>District Name</th>
+        <th>Upload your Report</th>
+        <th>Last Date to Submit</th>
+        
+        </tr>
+        <tr>
+            <td>IT Services and Employment</td>
+            <td>Sample Problem Statement</td>
+            <td>Thane</td>
+            <td><form method="POST" action=""><input type="file" name="" 
+                id=""><input type="Submit"></form></td>
+            <td>dd/mm/yyyy</td>
+        </tr>
+    </table>
+  </div>
+<br>
+<a href="#demo3" class="btn" data-toggle="collapse">Women and Child Welfare </a>
+        <br><br>
+  <div id="demo3" class="collapse">
+    <table cellpadding="20" id="bo">
+        <tr>
+        <th>Department Name</th>
+        <th>Problem/Project</th>
+        <th>District Name</th>
+        <th>Upload your Report</th>
+        <th>Last Date to Submit</th>
+        
+        </tr>
+        <tr>
+            <td>Women and Child Welfare</td>
+            <td>Sample Problem Statement</td>
+            <td>Thane</td>
+            <td><form method="POST" action=""><input type="file" name="" 
+                id=""><input type="Submit"></form></td>
+            <td>dd/mm/yyyy</td>
+        </tr>
+    </table>
+  </div>
+<br><br><br>
+    </div>
+
+
+</div>
+    <p></p>
+    </body>
+
+</html>
+
