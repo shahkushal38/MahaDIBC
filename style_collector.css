@@ -184,7 +184,7 @@ input[type=text]:focus, input[type=password]:focus,input[type=email]:focus,input
 }
 
 /* Set a style for all buttons */
-input[type=submit],input[type=button],input[type=reset] {
+input[type=submit],input[type=reset],input[type=button] {
   background-color: mediumorchid;
   color: white;
   padding: 14px 20px;
@@ -195,7 +195,7 @@ input[type=submit],input[type=button],input[type=reset] {
   opacity: 0.9;
 }
 
-input[type=submit],input[type=reset]:focus{
+input[type=submit],input[type=button]:focus{
   opacity:1;
   background-color:#8a2aa2;
 }

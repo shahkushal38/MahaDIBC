@@ -1,0 +1,114 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_collector.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+<style>
+img.im{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+th, td {
+  text-align: center;
+  padding: 20 px;
+  padding-right:20px;
+  border:1px solid black;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+th {
+  padding-top: 12px;
+  padding-left:12px;
+  padding-bottom: 12px;
+  padding: 20px;
+  text-align: center;
+  background-color: #681f7a;
+  color: white;
+}
+td
+{
+  padding: 20px;
+}
+
+
+</style>    
+<script type="text/javascript">
+    function sub()
+    {
+        document.getElementById("display").innerHTML="<table><tr><th>Problem Statement ID </th><th>Institute ID</th><th>Institute Name</th><th>Report</th><th></th></tr><tr><td>PSID</td><td>INID</td><td>Institute Name </td><td>Report file</td><td><form method='POST' action=''><button>View/Download</button></form></td></tr></table>";
+    }
+</script>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <br>
+        <div id="logo">
+            <a href="collector.html"><img src="logo.jpg" aign="right" height=200 width=300 ></a>
+            </div>
+            
+        <div id="moving">
+            <div id="text">
+            
+            <marquee><p>Welcome to Maharashtra Government's - Department of Institutional Bodies and Collectors</p></marquee>
+            </div>
+            
+            <img src="satyamev.png" align="left" height=150 width=100>
+            <img src="maharashtra.png" height=150 width=200>
+            
+            <br>
+
+        </div>
+        <br>
+        <br>
+        <div id="navbar">
+            <ul>
+            <h2>  Departments </h2>
+            <li><a href="#">Logout</a></li>
+            <li><a href="c_women.html" >Women and Child Welfare</a></li>
+            <li><a href="c_itservices.html" >IT Services and Employment</a></li>
+            <li><a href="c_health.html" >Health Services</a></li>
+            <li><a href="c_agriculture.html" >Agriculture</a></li>
+            
+        </div>
+        <br>
+        <p>Please Select your Action : </p>
+        <div id="contents">
+
+        <ul>
+            <li><a href="c_itservices.html"> Upload Problem Statements </a></li>
+            <li><a href="c_itservices_view.html"> View Reports </a></li>
+            <li><a href="c_itservices_gr.html"> View Grievances  </a></li>
+            
+            
+        </ul>
+        </div>
+        <div id="form">
+        <h1>View the Reports to Project/Problem Statement </h1>
+        <br><br>
+        <form action="" method="POST">
+            Enter Project/Problem Statement ID<br>
+            <input type="text" name="" required><br>
+            
+            <input type="button" value="Submit" onclick="sub()">
+        </form>
+        <div id="display">
+            
+        </div>
+
+    </div>
+
+
+</div>
+    <p></p>
+    </body>
+
+</html>
+

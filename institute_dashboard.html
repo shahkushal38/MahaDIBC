@@ -11,7 +11,14 @@
 img.im{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
-</style>    
+</style> 
+<script type="text/javascript">
+    function sent()
+    {
+        alert("Invitation Mail has been successfully sent to institutes's Email ID");
+        window.location.href="institute_dashboard.html";
+    }
+</script>   
     
 </head>
 <body>
@@ -58,8 +65,114 @@ img.im{
             
         </ul>
         </div>
+
         <div id="form">
         <h1>Your Institutes Profile </h1>
+        <br><br>
+        <div id=data>
+
+            Institute Name : {Name of Institute}<br><br>
+            Institute Email ID : {Email ID of Institute}<br><br>
+            
+            District : {Name of District} <br><br>
+
+            Person of Contact : {Name of Person}<br><br>
+            Contact No. : {mobile number} <br><br>
+
+            <br><br>
+
+            <!-- Trigger the modal with a button -->
+<input type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" value="Check For Approved Submission Reports">
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>The following Project Reports submitted by the Student groups of the institute have been approved by the Colllector's office</p>
+
+        <table>
+            <tr>
+            <th>Problem Statment ID</th>
+            <th> Name of Student Group</th>
+            <th>Project Name </th>
+            <th><th>
+            </tr>
+            <tr>
+                <td>{problem ID}</td>
+                <td>{name of group}</td>
+                <td>{project name}</td>
+                <td><input type="button" value="accept" onclick="sent()"></td>
+            </tr>
+
+        </table>
+
+        <p>Note - 
+            <br>
+            <ul>
+                <li>Click on Accept button to accept the invitation by the collector's office wherein the student group will get a chance to implement the project along with the concerned department.</li><br>
+                <li> After accepting the invitation a formal mail with offerletter should be mailed to the Institute's Email-ID.</li><br><br>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+           <!-- Trigger the modal with a button -->
+<input type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1" value="Check For Previous Submission Reports">
+
+<!-- Modal -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>The following Project Reports were submitted by the Student groups of the institute </p>
+
+        <table>
+            <tr>
+            <th>Problem Statment ID</th>
+            <th> Name of Student Group</th>
+            <th>Project Name </th>
+            </tr>
+            <tr>
+                <td>{problem ID}</td>
+                <td>{name of group}</td>
+                <td>{project name}</td>
+                
+            </tr>
+
+        </table>
+
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+ 
+
+
+
+        </div>
     </div>
 
 
